@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#page-heading{
+    text-align: center;
+    margin-top: 25px;
+    color: grey;
+}
+
+#contact-list-container ul{
+    /* padding: 0; */
+    padding-right: 40px;
+    padding-left: 40pxrh,;
+    scroll-padding-inline-end: 40px;
+    list-style: georgian ;
+}
+
+.contact{
+    padding: 5px 20px;
+    border: 1px solid wheat;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: rgb(194, 77, 56);
+    box-shadow: 1px 1px 1px 1px gray;
+    color: honeydew;
+    display: flex;
+}
+
+.contact .details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contact .delete-button{
+    width: 10%;
+    padding: 3px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.contact .delete-button  a{
+    color: khaki;
+}
+
+.contact p{
+    margin: 5px 50;
+}
+
+#new-contact-form{
+    text-align: center;
+    /* padding-left: 120px; */
+    border-top-width: 0px;
+    border-left-width: 0px;
+    
+}
+
+#name{
+    border-top-width: 0px;
+    border-left-width: 0px;
+}
+
+#phone{
+    border-top-width: 0px;
+    border-left-width: 0px;
+}
+
+#submit{
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    font-family: -webkit-body;
+    
+}
+
+#div{
+
+    padding-left: 40px;
+    padding-right: 40px;
+}

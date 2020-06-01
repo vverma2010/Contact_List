@@ -1,0 +1,44 @@
+ <html>
+    <head>
+        <title>
+            <%= title %>  
+             
+                //we can use "locals.title also instead of "title" "
+        </title>
+        <script src="https://kit.fontawesome.com/0691d296c8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1 id="page-heading">
+            <i class="fas fa-atom"></i>
+            My Contacts List
+        </h1>
+
+        <div id="div">
+            <ul>
+                <% for(let i of contact_list){ %>
+                 <li class="contact">
+                     <div class="details">
+                        <p><%= i.name %></p>
+                        <p><%= i.phone%></p>
+                     </div>
+                     <div class="delete-button">
+                         <a href="/delete-contact/?id=<%= i._id %>">
+                             <i class="fas fa-user-minus"></i>
+
+                         </a>
+                     </div>
+                 </li>
+                <% } %>
+            </ul>
+        </div>
+        <form id="new-contact-form" action="/create-contact" method="POST">
+            <input id="name" type="text" name="name" placeholder="Enter Name" required>
+            <input id="phone" type="number" name="phone" placeholder="Enter Phone" required>
+
+            <button id="submit" type="submit">Add Contact</button>
+
+        </form>
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>
